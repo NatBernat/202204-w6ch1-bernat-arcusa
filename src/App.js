@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1> SUPER FUN RANDOM BULLSHIT TO DO </h1>
+      <h1>To-do list</h1>
       <Form />
       <TasksList />
     </div>

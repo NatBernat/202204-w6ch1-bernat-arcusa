@@ -7,10 +7,10 @@ import {
 import styled from "styled-components";
 
 const StyledTaskComponent = styled.div`
-  border-style: dashed;
   margin: 30px;
   border-radius: 20px;
   padding: 20px;
+  background-color: lightgreen;
   ul {
     margin-bottom: 10px;
   }
@@ -18,15 +18,6 @@ const StyledTaskComponent = styled.div`
   li {
     list-style: none;
     padding: 10px;
-  }
-  button {
-    border-style: dashed;
-    border-width: 1px;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 10px;
-    margin: 0 20px;
-    cursor: pointer;
   }
 `;
 
@@ -48,14 +39,9 @@ const Task = ({ task: { id, name, done }, inputValue }) => {
   return (
     <StyledTaskComponent>
       <ul>
-        <li>Id: {id}</li>
-        <li>Task Name: {name}</li>
-        <li>
-          Task Status:{" "}
-          {done
-            ? "You the best, it's finished"
-            : "C'mon, you have to finish that"}
-        </li>
+        <li>id: {id}</li>
+        <li>Task name: {name}</li>
+        <li>Task status: {done ? "Done!" : "Pending"}</li>
       </ul>
       <div>
         <button onClick={updateTask}>Mark as done</button>

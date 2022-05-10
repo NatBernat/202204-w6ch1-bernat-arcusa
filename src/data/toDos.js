@@ -1,6 +1,6 @@
 const toDos = [
-  { id: 1, name: "Landing at ISDI Coders", done: true },
-  { id: 2, name: "Code Review", done: false },
+  { id: 1, name: "Don't worry", done: true },
+  { id: 2, name: "Be happy", done: false },
 ];
 
 export default toDos;
