@@ -4,18 +4,18 @@ import styled from "styled-components";
 import { addTaskActionCreator } from "../../redux/features/taskSlice";
 
 const StyledFormComponent = styled.div`
-  border-style: dashed;
   margin: 30px;
   border-radius: 20px;
   padding: 20px;
   font-size: 15px;
+  background-color: darkgrey;
+  color: white;
   form {
     display: flex;
     flex-direction: column;
   }
 
   input {
-    border-style: dashed;
     border-width: 1px;
     padding: 10px;
     margin: 10px;
@@ -23,14 +23,8 @@ const StyledFormComponent = styled.div`
     border-radius: 10px;
     text-align: center;
   }
-  button {
-    border-style: dashed;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-    font-size: 15px;
-    border-radius: 10px;
-    cursor: pointer;
+  button:hover {
+    background-color: black;
   }
 `;
 
